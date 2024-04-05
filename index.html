@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App With JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter your location" class="input-box">
+                 <button  name='right-arrow-alt' id="searchBtn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAkRJREFUSEuVlrFKJEEQhr8KlUUw1cTYS0w2EUQUQQ6fwKfR9zD3HQQRRBNR7jFOLrjjhEPN2puZ3p3q6aru3g02mO6ev+qv//97RIDQ/+H+9HJla/8Oe396UrwXrQrgl22vJMA2WFq/EAxyjJOVjrrl9Be5twGM6lcYk55DDjxdncx+xBGaizO6czquCK3CijeyvtC4mAAXZ2xL9RvwCvxxJOTaxaFaW8Id4hbwDPwGDoC3BXh2wii6ATgtQs31WuA8SuAFONHgNXsNwC2mzQWyCeEOYa/zl8CPAIfAP9spebAs9xXxbatuBLgFmcfoe4qd5+CL/nJxrdC2VrUwI3AHzCNzHfgxwnuaNJPI9GipzWiyPgNugP34/BE4Bd49tStxmR3vADstKgXWgSugU3v3ewA5FcKHdf8kwEYSXf434oVOq+I1liu1G8EZ8Gkls5HVy0eXIBcarBgyedwmwImdPUnF5z3VY2XF3WuR6u246x74LvChY3JBu+PjFoUn9a9BuG0X1+DpEtXZ94QO+nhwBnIDYT+xU69oJyuHwBnfbd8Dxe436AOEeSxiDBAVFBVVV67CvMJNQEfmUxBOCDoy/TvbuSQqkhtqvAbOY7ndJXE05HSLPqwZ5170vhq3IXTU/gI5hvA2bGzgeDljzXJLweO7dwP8BP4WOTIWE6pbMG0XNI0mY860k63wOEGng4HltvIdH7cd1onmfW/r59Nm0jaK3RhiaBGUMR/VsYe4qvLS/d63t+PjSop6lvOEEffrIr4AEervIudVGt0AAAAASUVORK5CYII="/></button> 
+            </div>
+        </div>
+
+        <div class="location-not-found">
+            <h1>*** Sorry, Location is not found!!! ***</h1>
+            <img src="./images/404.png" alt="404 Error">
+        </div>
+
+        <div class="weather-body">
+            <img src="./images/cloud.png" alt="Weather Image" class="weather-img">
+
+            <div class="weather-box">
+                <p class="temperature">0 <sup>°C</sup></p>
+                <p class="description">light rain</p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">12Km/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/595a890311.js" crossorigin="anonymous"></script>
+</body>
+</html>
